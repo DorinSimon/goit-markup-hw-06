@@ -183,14 +183,12 @@ header {
   color: #757575;
 }
 
-.form-item:hover >.svg-form:hover,
-.contact-input:hover,
+.svg-form:focus,
 .contact-input:focus,
-.textarea-contact:focus,
-.textarea-contact:hover{
+.textarea-contact:focus{
   cursor: pointer; 
   border-color:var(--text-color-bleu);
-  fill: var(--text-color-bleu); 
+  fill: var(--text-color-bleu);  
 }
 
 .contact-input {
@@ -201,9 +199,9 @@ header {
   border-radius: 4px;
   padding-left: 35px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  
 }
  
-
 .textarea-contact {
   font-family: "Roboto";
   font-style: normal;
@@ -220,6 +218,7 @@ header {
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
+
 .checkbox-label {
   display: flex;
   gap:8px;
